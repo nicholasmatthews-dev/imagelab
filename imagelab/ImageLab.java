@@ -17,6 +17,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import sound.AudioController;
+
 /**
  * ImageLab is a platform for image filter development.  ImageLab
  * begins by building a menu of all available filters (those .class files
@@ -67,6 +69,9 @@ public class ImageLab {
 
     /** Height for Frame Bounds. */
     private static final int FRAME_HEIGHT = 100;
+    
+    /** The AudioController instance which handles audio for the program */
+    private static AudioController audioCtrl = new AudioController();
 
     /**
      * Application entry point.
@@ -335,7 +340,8 @@ public class ImageLab {
                     JOptionPane.showMessageDialog(myframe, "First select the image to play");
                     return;
                 } //if
-                improvider.play();
+                audioCtrl.playCurrentFilter(impro);
+                //impro.play();
             } //actionPerformed
         }; //new ActionListener
     } //makePlayListener
