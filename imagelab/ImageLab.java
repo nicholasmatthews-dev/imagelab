@@ -341,7 +341,6 @@ public class ImageLab {
                     return;
                 } //if
                 audioCtrl.playCurrentFilter(impro);
-                //impro.play();
             } //actionPerformed
         }; //new ActionListener
     } //makePlayListener

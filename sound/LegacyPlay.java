@@ -3,9 +3,15 @@ package sound;
 import imagelab.ImgProvider;
 
 /**
- * The legacy implementation of ImgProvider.play() as an AudioFilter
+ * The legacy implementation of ImgProvider.play() as an AudioFilter, from ImgProvider.play(): <p>
+ * "Used by ImageLab to render an image as sound.
+ * Three channels of sound are created, using the
+ * average the Red, Green and Blue values of each
+ * row to establish the pitches for the channels.
+ * The average of Hue, Saturation and Brightness
+ * values of each row are used as the velocities
+ * of the Red, Green and Blue notes respectively."
  * @author Dr. Jody Paul
- * @author Nicholas Matthews
  * @version 1.1
  */
 public class LegacyPlay extends AudioFilter {
