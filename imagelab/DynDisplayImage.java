@@ -8,7 +8,7 @@ import java.awt.Image;
  * to retrieve the singleton object each time.
  *
  * @author Dr. Jody Paul
- * @version 1.1.1
+ * @version 1.1.2
  */
 public class DynDisplayImage extends DisplayImage {
     /** Serialization version. */
@@ -20,7 +20,7 @@ public class DynDisplayImage extends DisplayImage {
     private DynaPanel pane;
     /** Singleton object. */
     private DynDisplayImage singleton;
-    /** Delay for image to be displayed  */
+    /** Delay for image to be displayed.  */
     private static final int SLEEP_TIME = 50;
 
     /**
